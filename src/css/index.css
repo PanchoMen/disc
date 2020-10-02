@@ -1,0 +1,45 @@
+#container {
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	margin-top: 10%;
+	display: flex;
+}
+
+#caratula {
+	width: 50%;
+	height: 75%;
+	background-color: darkgrey;
+}
+
+#disco {
+	width: 50%;
+	height: 75%;
+	background-color: black;
+	background-image: linear-gradient(230deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+	position: relative;
+	left: -5%;
+	z-index: -1;
+}
+
+#disco__interno {
+	width: 40%;
+	height: 40%;
+	background-color: red;
+}
+
+#disco__agujero {
+	width: 10%;
+	height: 10%;
+	background-color: white;
+}
+
+.centrado {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.redondo {
+	border-radius: 50%;
+}
