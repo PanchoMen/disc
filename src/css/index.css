@@ -12,14 +12,19 @@
 	background-color: darkgrey;
 }
 
+#caratula:hover + #disco {
+	animation: openDisc 3s linear 1 forwards;
+}
+
 #disco {
 	width: 50%;
 	height: 75%;
 	background-color: black;
 	background-image: linear-gradient(230deg, transparent, rgba(255, 255, 255, 0.25), transparent);
 	position: relative;
-	left: -5%;
+	left: -50%;
 	z-index: -1;
+  animation: openDisc 3s  2s linear 1 forwards;
 }
 
 #disco__interno {
@@ -42,4 +47,9 @@
 
 .redondo {
 	border-radius: 50%;
+}
+
+@keyframes openDisc {
+  0% { transform: translate(0%, 0%) rotate(0deg) }
+  100% { transform: translate(95%, 0%) rotate(360deg); }
 }

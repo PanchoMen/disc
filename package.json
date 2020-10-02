@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel --port 80 src/index.html",
-    "build": "parcel build src/index.html --public-url /vinyl_music_disc -d build",
+    "build": "parcel build src/index.html --public-url /disc -d build",
     "deploy": "gh-pages -d build"
   },
   "keywords": [],
